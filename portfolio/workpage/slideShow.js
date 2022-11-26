@@ -11,6 +11,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// moves slides after button click
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
