@@ -74,6 +74,7 @@ body {
 }
 
 /* Hide the images by default */
+
 .mySlides {
     display: none;
     text-align:center;
@@ -139,7 +140,7 @@ body {
 .row{
     display: flex;
     justify-content:center;
-}
+} 
 
 .row:after {
     content: "";
