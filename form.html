@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Murphy">
+    <meta name="keywords" content="keywords for site">
+    <meta name="description" content="description">
+    <title>East-Mec-Forms</title>
+    <link rel="icon" type="image/x-icon" href="eastlogo.png">
+    <meta Property="og:image" content="Link or image">
+    <meta Property="og:image" content="Image of website">
+    <meta Property="og:title" content="Title of website">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<!-- header -->
+<header class="head">
+    <br>
+    <h1>
+        <div id="mainTitleContainer">
+            <span id="mainTitle">
+                <img id="stickyImage" src="eastlogo.png" alt="East-Mec Logo">
+                East-Mec
+            </span>
+        </div>
+    </h1>
+    <div class="headerLinksContainer">
+        <a class="home" href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="gallery" href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="service" href="service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="form" href="form.html">Form</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="#extra" hidden>Extra information</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- school signup -->
+    <form>
+        <p>Would you like to sign up for our school? Please enter the information below:</p>
+        <fieldset id="signup">
+            <legend>Sign Up</legend>
+            <br>
+
+            <!-- email -->
+            <label>Email:</label><input type="email" name="account" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/><required>
+            <br>
+            <br>
+
+            <!-- name or username -->
+            <label>Name/Username:</label><input type="text" name="account" required>
+            <br>
+            <br>
+
+            <!-- password -->
+            <label id="passReqs" name="account"><em>*Your password must be at least 8 character long, have one upercase letter, lowercase letter, a number, and a special symbol.</em></label>
+            <br>
+            <label>Create a password:</label><input type="password" name="account" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <br>
+            <label>Verify your password:</label><input type="password" name="account" minlength="8" required><br><br>
+
+            <!-- desired class -->
+            <p>Enter your desired class:</p>
+            <input type="radio" name="class" required><label>Clown</label>
+            <br>
+            <input type="radio" name="class" required><label>Lion Tamer</label>
+            <br>
+            <input type="radio" name="class" required><label>Daredevil</label>
+            <br>
+            <input type="radio" name="class" required><label>Magician</label>
+            <br>
+            <input type="radio" name="class" required><label>Trapeze</label>
+            <br>
+            <input type="radio" name="class" required><label>Acrobat</label>
+            <br>
+            <br>
+
+            <!-- notifications -->
+            <label>Would you like to recive update notifcations?</label>
+            <br>
+            <input type="radio" name="notifications" name="account"><label>YES</label>
+            <br>
+            <input type="radio" name="notifications" name="account"><label>NO</label>
+            <br>
+
+            <!-- allergies -->
+            <p>Check any boxes for allergy information:</p>
+            <input type="checkbox"><label>Nuts</label>
+            <br>
+            <input type="checkbox"><label>Eggs</label>
+            <br>
+            <input type="checkbox"><label>Dairy</label>
+            <br>
+            <input type="checkbox"><label>Lions</label>
+            <br>
+            <br>
+
+            <!-- other comments -->
+            <p>Put any other comments or notes:</p>
+            <textarea columns="20" rows="6" placeholder="Enter Here" id="extra"></textarea><br>
+            <a href="index.html"><button type="submit">Submit</button></a>
+        </fieldset>
+    </form>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Contatct us at any of the following: 607-590-4040 staff@east-mec.org @east-mec</p>
+        <p>Contact us at time from January to Decemember during weekdays and from 7:00am to 6:00pm</p>
+        <p>Credits: Circuses GLobally Andrew Murphy Ren Levingar Mr.Bernard The US Clown Trade School</p>
+        <div class="bottom">&#169; 2022 East-Mec</div>
+    </div>
+    <script src="scrollbar.js"></script>
+</body>
+</html>
