@@ -57,23 +57,34 @@ input{
     float: left;
     width: 25vw;
     height: 25vw;
-    padding: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: 1vw;
+    padding-bottom: 2.25vw;
 }
 
 #trans{
     float: right;
     width: 25vw;
     height: 25vw;
-    padding: 2.5vw;
+    padding-left: 2.5vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
 }
 
 #aboutme{
     text-align: justify;
     line-height: 2.25;
     font-size: 20px;
-    padding-left: 5vw;
-    padding-right: 5vw;
 }
+
+.info {
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+
 .footer {
     display: block;
     background-color: grey;
@@ -85,11 +96,6 @@ input{
     /* margin-bottom: -2ch;
     margin-left: -2ch;
     margin-right: -1ch; */
-}
-
-.info{
-    padding-left: 5vw;
-        padding-right: 5vw;
 }
 body{
     background-color: #595454;
