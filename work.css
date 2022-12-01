@@ -194,3 +194,9 @@ img{
     flex:space-evenly;
     height: 20vw;
 }
+
+@media only screen and (max-width: 650px) {
+    .mySlides {
+        padding-left: 0vw;
+    }
+}

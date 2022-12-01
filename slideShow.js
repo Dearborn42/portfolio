@@ -38,18 +38,29 @@ function showSlides(n) {
   
 
   if(w >= 650){
+
     if(slideIndex == slides.length){
+
       slideShow.append(slides[slideIndex-1], slides[slideIndex-slides.length]);
       slides[slideIndex-1].style.display = "block";
-      slides[slideIndex-slides.length].style.display = "block";
+      slides[slideIndex-slides.length+1].style.display = "block";
+
     }else if(slideIndex != slides.length){
+
       slideShow.append(slides[slideIndex-1], slides[slideIndex]);
       slides[slideIndex-1].style.display = "block";
       slides[slideIndex].style.display = "block";
-    }else{
-      slideShow.append(slides[slideIndex-1]);
+      
     }
-  }
+
+  }else{
+    
+      slideShow.append(slides[slideIndex-1]);
+      slides[slideIndex-1].style.display = "block";
+      slideShow.style.justifyContent = "center";
+      slideShow.style.paddingLeft = "-12vw";
+
+    }
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
