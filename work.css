@@ -81,6 +81,9 @@ body {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: space-evenly;
 }
 
 /* Hide the images by default */
@@ -109,9 +112,8 @@ body {
     top: 40%;
     width: auto;
     padding: 1vw;
-    margin-top: -5vw;
-    margin-right:5vw;
-    margin-left:5vw;
+    margin-right:2.5vw;
+    margin-left:2.5vw;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -188,15 +190,19 @@ img{
     opacity: 1;
 }
 
-#slideShow{
-    display: flex;
-    flex-wrap: wrap;
-    flex:space-evenly;
-    height: 20vw;
+@media only screen and (max-width: 650px) {
+    .container{
+        height:50vw;
+    }
+    .container img{
+        height: 50vw;
+        width: 73vw;
+    }
 }
 
-@media only screen and (max-width: 650px) {
-    .mySlides {
-        padding-left: 0vw;
+@media only screen and (max-width: 300px){
+    .container img {
+        height: 50vw;
+        width: 72vw;
     }
 }
