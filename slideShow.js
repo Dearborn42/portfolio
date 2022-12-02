@@ -18,7 +18,6 @@ function showSlides(n) {
   let captionText = document.getElementById("caption");
   let slideShow = document.getElementById("slideShow");
   let w = window.innerWidth;
-  console.log(w);
 
   let i;
   if (n > slides.length) {slideIndex = 1}
