@@ -72,22 +72,22 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    height: 90%;
+    height: 70vh;
+    justify-content: space-evenly;
 }
 
-/* Hide the images by default */
-
-.mySlides {
-    display: none;
-    padding-left: 12vw;
+.mySlides{
+    padding-top: 6vh;
+    height: 56vh;
+    width: 42vw;
 }
-
 .mySlides img{
-    height: 20vw;
+    height: 56vh;
+    width: 42vw;
+    border-radius: 50px;
 }
-.column img{
-    height: 10vw;
-}
+
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
@@ -101,8 +101,8 @@ body {
     top: 40%;
     width: auto;
     padding: 1vw;
-    margin-right:2.5vw;
-    margin-left:2.5vw;
+    margin-right:.9vw;
+    margin-left:.9vw;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -120,6 +120,7 @@ body {
 .prev{
     background-color: #000000;
     border-radius: 12px;
+    left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -137,26 +138,88 @@ body {
     padding:2px 16px;
     color: white;
 }
+@media only screen and (max-width: 1300px) {
+    .mySlides {
+        padding-top: 10vh;
+        height: 45vh;
+        width: 40vw;
+    }
 
-img{
-    padding-top: 2vw;
-    padding-bottom: 1vw;
-    border-radius: 50px;
+    .mySlides img {
+        height: 45vh;
+        width: 40vw;
+    }
+    .container {
+        height: 65vh;
+    }
+    .prev,
+    .next {
+        top: 47%;
+    }
 }
+@media only screen and (max-width: 1050px) {
+    .mySlides {
+        padding-top: 3vh;
+        height: 50vh;
+        width: 40vw;
+    }
 
+    .mySlides img {
+        height: 50vh;
+        width: 40vw;
+    }
+    .container {
+        height: 55vh;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .mySlides {
+        padding-top: 10vh;
+        height: 38vh;
+        width: 40vw;
+    }
+
+    .mySlides img {
+        height: 38vh;
+        width: 40vw;
+    }
+}
 @media only screen and (max-width: 650px) {
     .container{
-        height: 90%;
+        height: 60vh;
     }
-    .container img{
-        height: 50vw;
-        width: 73vw;
+    .mySlides {
+        padding-top: 1vh;
+        height: 59vh;
+        width: 80vw;
+    }
+    .mySlides img {
+        height: 58vh;
+        width: 80vw;
+    }
+    .prev,
+    .next {
+        top: 40%;
     }
 }
 
-@media only screen and (max-width: 300px){
-    .container img {
-        height: 50vw;
-        width: 72vw;
+@media only screen and (max-width: 400px){
+    .mySlides {
+        padding-top: 5vh;
+        height: 40vh;
+        width: 77vw;
+    }
+
+    .mySlides img {
+        height: 40vh;
+        width: 77vw;
+    }
+    .container {
+        height: 50vh;
+    }
+    .prev,
+    .next {
+        margin-right: 1vw;
+        margin-left: 1vw;
     }
 }
