@@ -1,5 +1,5 @@
 /* makes the header container */
-#mainTitleContainer {
+/* #mainTitleContainer {
     top: -30px;
     position: relative;
     padding-bottom: 10px;
@@ -11,48 +11,78 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+} */
+
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2vh 0px;
+    color: white;
+}
+.footer {
+    display: block;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 
-/* organizes all links */
-.headerLinksContainer {
-    position: relative;
-    border-color: black;
-    border-width: 0px;
-    border-radius: 3px;
-    border-style: dashed;
-    top: -55px;
-    text-align: center;
+
+
+
+
+
+.head{
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-header {
+    justify-content: space-between;
     background-color: grey;
-    border-radius: 12px;
-    /* top: -1ch; */
-    position: sticky;
-    /* margin-top: -2ch;
-    margin-left: -2ch;
-    margin-right: -1ch; */
+    top: 0;
+    right:0;
+    width:100%;
+    height:11vh;
+}
+.head #links{
+    margin-top: 3vh;
+    display:flex;
+    justify-content: space-evenly;
+    padding-right:2vw;
 }
 
+.head #nameLogo{
+    height: fit-content;
+    padding-bottom: 1vh;
+    padding-left: 3vw;
+}
 a {
     text-decoration: none;
     color: black;
-}
-
-button {
-    background-color: #aaa;
-    border-radius: 12px;
-    border: 2px solid grey;
+    height:fit-content;
+    padding-top: 1.25vh;
 }
 
 input {
     border-radius: 12px;
     border: 2px solid grey;
+    margin-top: 1.25vh;
 }
+
+#space{
+    background-color: red;
+    height:2px;
+}
+
+
+
+
+
 
 
 body {
@@ -63,6 +93,13 @@ body {
 }
 
 
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -70,20 +107,20 @@ body {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    top: 7vh;
     display: flex;
     flex-wrap: wrap;
-    height: 70vh;
     justify-content: space-evenly;
 }
 
 .mySlides{
-    padding-top: 6vh;
-    height: 56vh;
-    width: 42vw;
+    padding-top: 15vh;
+    height: 85.4vh;
+    width: 40vw;
 }
 .mySlides img{
-    height: 56vh;
-    width: 42vw;
+    height: 55vh;
+    width: 40vw;
     border-radius: 50px;
 }
 
@@ -101,6 +138,7 @@ body {
     top: 40%;
     width: auto;
     padding: 1vw;
+    margin-top: 4vh;
     margin-right:.9vw;
     margin-left:.9vw;
     color: white;
@@ -128,98 +166,39 @@ body {
 .next:hover {
     background-color: grey;
 }
-
-
-/* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    border-radius: 12px;
-    padding:2px 16px;
-    color: white;
-}
-@media only screen and (max-width: 1300px) {
-    .mySlides {
-        padding-top: 10vh;
-        height: 45vh;
-        width: 40vw;
-    }
-
-    .mySlides img {
-        height: 45vh;
-        width: 40vw;
-    }
-    .container {
-        height: 65vh;
-    }
-    .prev,
-    .next {
-        top: 47%;
-    }
-}
-@media only screen and (max-width: 1050px) {
-    .mySlides {
-        padding-top: 3vh;
-        height: 50vh;
-        width: 40vw;
-    }
-
-    .mySlides img {
-        height: 50vh;
-        width: 40vw;
-    }
-    .container {
-        height: 55vh;
-    }
-}
-@media only screen and (max-width: 950px) {
-    .mySlides {
-        padding-top: 10vh;
-        height: 38vh;
-        width: 40vw;
-    }
-
-    .mySlides img {
-        height: 38vh;
-        width: 40vw;
+@media only screen and (max-width: 750px) {
+    h1{
+        padding-top: 2vh;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 650px) {
-    .container{
-        height: 60vh;
-    }
     .mySlides {
-        padding-top: 1vh;
-        height: 59vh;
+        padding-top: 15vh;
         width: 80vw;
-    }
+        }
     .mySlides img {
-        height: 58vh;
+        height: 55vh;
         width: 80vw;
+        border-radius: 50px;
     }
     .prev,
-    .next {
-        top: 40%;
+    .next{
+        margin-top: 4vh;
     }
 }
-
-@media only screen and (max-width: 400px){
-    .mySlides {
-        padding-top: 5vh;
-        height: 40vh;
-        width: 77vw;
+@media only screen and (max-width: 620px) {
+    h1{
+        padding-top: 3vh;
+        font-size: 15px;
     }
-
-    .mySlides img {
-        height: 40vh;
-        width: 77vw;
+    a{
+        padding-top: 2vh;
+        font-size: 10px;
     }
-    .container {
-        height: 50vh;
-    }
-    .prev,
-    .next {
-        margin-right: 1vw;
-        margin-left: 1vw;
+    input{
+        margin-top: 1.65vh;
+        height: 2.3vh;
+        width: 20vw;
     }
 }

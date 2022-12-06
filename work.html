@@ -9,20 +9,15 @@
 </head>
 <body>
     <header class="head">
-        <br>
-        <h1>
-            <div id="mainTitleContainer">
-                <span id="mainTitle">
-                    Andrew Murphy
-                </span>
-            </div>
-        </h1>
-        <div class="headerLinksContainer">
-            <a class="home" href="index.html"><button>Home</button></a>
+        <div id="nameLogo">
+            <h1>Andrew Murphy</h1>
+        </div>
+        <div id="links">
+            <a class="home" href="index.html">home</a>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="work" href="work.html"><button>Work Page</button></a>
+            <a class="work" href="work.html">Work page</a>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="service" href="contact.html"><button>Contact Me</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="service" href="contact.html">Contact Me</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <div class="dropdown">
                 <div id="myDropdown" class="dropdown-content">
                     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
@@ -54,8 +49,10 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="caption-container">
-        <p id="caption"></p>
+    <div class="footer">
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
     </div>
     <script src="slideShow.js"></script>
 </body>
