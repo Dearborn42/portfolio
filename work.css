@@ -61,9 +61,8 @@
     padding-bottom: 1vh;
     padding-left: 3vw;
 }
-h1{
-    padding-top: 1vh;
-    font-size: clamp(15px, 30px, 30px);
+#nameLogo p{
+    font-size: clamp(16px, 32px, 30px);
 }
 a {
     text-decoration: none;
@@ -76,11 +75,6 @@ input {
     border-radius: 12px;
     border: 2px solid grey;
     margin-top: 1.25vh;
-}
-
-#space{
-    background-color: red;
-    height:2px;
 }
 
 
