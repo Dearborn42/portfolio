@@ -61,6 +61,10 @@
     padding-bottom: 1vh;
     padding-left: 3vw;
 }
+h1{
+    padding-top: 1vh;
+    font-size: clamp(15px, 30px, 30px);
+}
 a {
     text-decoration: none;
     color: black;
@@ -166,12 +170,6 @@ body {
 .next:hover {
     background-color: grey;
 }
-@media only screen and (max-width: 750px) {
-    h1{
-        padding-top: 2vh;
-        font-size: 20px;
-    }
-}
 @media only screen and (max-width: 650px) {
     .mySlides {
         padding-top: 15vh;
@@ -185,20 +183,5 @@ body {
     .prev,
     .next{
         margin-top: 4vh;
-    }
-}
-@media only screen and (max-width: 620px) {
-    h1{
-        padding-top: 3vh;
-        font-size: 15px;
-    }
-    a{
-        padding-top: 2vh;
-        font-size: 10px;
-    }
-    input{
-        margin-top: 1.65vh;
-        height: 2.3vh;
-        width: 20vw;
     }
 }
