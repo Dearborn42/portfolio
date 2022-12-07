@@ -47,6 +47,8 @@
     height:11vh;
 }
 .head #links{
+    position: fixed;
+    right:0;
     height: fit-content;
     display:flex;
     flex-wrap: wrap;
@@ -59,7 +61,7 @@
 .head #nameLogo{
     display: flex;
     justify-content: space-around;
-    padding-top: .5vh;
+    padding-top: calc(clamp(-11px, -4.5px, -2px)*-1);
     height: fit-content;
     width: clamp(8vw, 32vw, 40vw);
 }
