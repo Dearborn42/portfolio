@@ -61,7 +61,7 @@
 .head #nameLogo{
     display: flex;
     justify-content: space-around;
-    padding-top: calc(clamp(-11px, -4.5px, -2px)*-1);
+    padding-top: .5vh;
     height: fit-content;
     width: clamp(8vw, 32vw, 40vw);
 }
@@ -85,7 +85,8 @@ body {
     background-color: #595454;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.1'%3E%3Ccircle fill='%23595454' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23595250' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%2359504c' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23574f48' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23534e44' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%234E4E41' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
-    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 
@@ -103,20 +104,21 @@ body {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
-    top: 7vh;
     display: flex;
     flex-wrap: wrap;
+    top:10vh;
     justify-content: space-evenly;
+    height: 78vh;
 }
 
 .mySlides{
-    padding-top: 15vh;
-    height: 85.4vh;
+    height: 55vh;
     width: 40vw;
 }
 .mySlides img{
     height: 55vh;
     width: 40vw;
+    margin-top: 11vh;
     border-radius: 50px;
 }
 
@@ -164,7 +166,6 @@ body {
 }
 @media only screen and (max-width: 650px) {
     .mySlides {
-        padding-top: 15vh;
         width: 80vw;
         }
     .mySlides img {
