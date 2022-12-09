@@ -14,6 +14,7 @@ function currentSlide(n) {
 // moves slides after button click
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
+  let text = document.getElementsByClassName("text");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   let w = window.innerWidth;
@@ -27,6 +28,10 @@ function showSlides(n) {
 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < text.length; i++) {
+    text[i].style.display = "none";
   }
 
 
@@ -46,4 +51,10 @@ function showSlides(n) {
       captionText.innerHTML = slides[0].id + " and " + slides[slideIndex - 1].id;
     }
   }
+
+  function desc(){
+    
+  }
+
+
 }
