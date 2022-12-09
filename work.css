@@ -122,7 +122,11 @@ body {
     border-radius: 50px;
 }
 
-
+.text{
+    font-size: larger;
+    color: white;
+    position: absolute;
+}
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
