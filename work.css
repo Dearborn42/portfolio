@@ -112,21 +112,28 @@ body {
 }
 
 .mySlides{
+    display: flex;
+    justify-content: center;
+    margin-top: 11vh;
     height: 55vh;
     width: 40vw;
 }
 .mySlides img{
     height: 55vh;
     width: 40vw;
-    margin-top: 11vh;
     border-radius: 50px;
 }
-
 .text{
+    position: absolute;
     font-size: larger;
     color: white;
-    position: absolute;
+    width: 40vw;
+    height:55vh;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-30%);
 }
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
