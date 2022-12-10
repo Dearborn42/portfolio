@@ -7,17 +7,6 @@
     color: white;
 }
 
-.footer {
-    display: block;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-}
-
 
 
 
@@ -76,7 +65,7 @@ a {
     padding-bottom: 2.25vw;
 }
 
-.aboutme p{
+p{
     text-align: justify;
     line-height: 2.25;
     font-size: 20px;
@@ -86,24 +75,38 @@ a {
     padding-top: 11vh;
     display: flex;
     width: 100vw;
+    height:fit-content;
     padding-left: -2vw;
     flex-wrap: wrap;
     text-align: center;
-
     background-color: red;
+}
+#secondPic {
+    float: right;
+    width: 25vw;
+    height: 25vw;
+    padding-left: 2.5vw;
+    padding-top: 1vw;
+    padding-bottom: 2.25vw;
+}
+.Skills {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    padding-left: -2vw;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: purple;
 }
 
 .footer {
     display: block;
     background-color: grey;
-    position: absolute;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 12px;
-    /* margin-bottom: -2ch;
-    margin-left: -2ch;
-    margin-right: -1ch; */
+    
 }
 
 body{
