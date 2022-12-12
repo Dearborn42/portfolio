@@ -66,6 +66,7 @@ p{
     padding-left: -2vw;
     flex-wrap: wrap;
     text-align: center;
+    justify-content:space-between;
     background-color: red;
 }
 #secondPic {
@@ -76,19 +77,28 @@ p{
     padding-top: 1vw;
     padding-bottom: 2.25vw;
 }
+.text{
+    width: 30vw;
+    padding-right: 15vw;
+}
 .Skills {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-between;
     background-color: purple;
 }
 .resume {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
     background-color: blue;
+}
+.images{
+    height: 50vh;
+    width: 56.15vw;
+    overflow: scroll;
 }
 .footer {
     display: block;
