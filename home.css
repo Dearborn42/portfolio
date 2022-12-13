@@ -6,7 +6,7 @@
     background-color: black;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 11vh;
 }
 .head #links {
@@ -17,14 +17,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-right: 2vw;
-    width: clamp(13vw, 50vw, 51vw);
+    width: clamp(13vw, 50vw, 50vw);
 }
 .head #nameLogo {
     display: flex;
     justify-content: space-around;
     padding-top: .5vh;
     height: fit-content;
-    width: clamp(8vw, 32vw, 40vw);
+    width: clamp(8vw, 32vw, 32vw);
 }
 #nameLogo h1 {
     color: white;
@@ -55,33 +55,37 @@ p{
 
 
 #Selfie{
-    width: 100%;
+    width: 100vw;
 }
 .aboutme {
     padding-top: 10vh;
-    padding-left: 10%;
+    padding-left: 8vw;
     display: flex;
-    width: 90%;
+    width: 80vw;
     flex-wrap: wrap;
     text-align: center;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+.h3 h3 {
+    margin-left: 23%;
+    width: fit-content;
+    border-bottom: 4px solid #38b2ff;
 }
 .right{
-    width: 50%;
+    width: 35%;
 }
 .left{
-    width:50%;
+    width:40%;
 }
 .aboutme .text{
     font-size: 3rem;
 }
 .lang img{
-    width: 10rem;
-    height: 10rem;
+    width: 20%;
+    height: 20%;
 }
 .text{
     width: 30vw;
-    padding-right: 15vw;
 }
 .Skills {
     display: flex;
@@ -101,6 +105,8 @@ p{
     height:1px;
     background-color: black;
     border: 2px solid black;
+    margin-right: 0vw;
+    margin-left: 8%;
 }
 
 
@@ -112,7 +118,7 @@ p{
 }
 .resume {
     display: flex;
-    width: 100%;
+    width: 90vw;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -132,10 +138,13 @@ p{
     position: absolute;
     width: 16px;
     height: 16px;
-    left:clamp(1.3rem, 1.9rem, 1.9rem);
+    left:1.1%;
     border-radius: 50px;
     background: black;
     border: 2px solid black;
+}
+#edu{
+    width:100%;
 }
 .list h3{
     color: #38b2ff;
@@ -143,7 +152,7 @@ p{
 }
 .images{
     height: 50vh;
-    width: 48rem;
+    width: 50vw;
     overflow: scroll;
 }
 
@@ -161,7 +170,7 @@ p{
 .footer p{
     color: white;
 }
-.footer .bottom{
+.footer h3{
     color: white;
 }
 
@@ -180,4 +189,9 @@ body{
 .container{
     display:flex;
     flex-direction: column;
+    width:100%;
+    height:100%;
+}
+h2{
+    border-bottom: 4px solid #38b2ff;
 }
