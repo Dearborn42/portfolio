@@ -77,7 +77,7 @@ a {
     padding-top: .2vh;
     font-size: clamp(.4rem, 1.4vw, 2.8rem);
 }
-a:hover {
+#links a:hover {
     color: #38b2ff;
     border-bottom: 2px solid #38b2ff;
 }

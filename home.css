@@ -10,8 +10,6 @@
     height: 11vh;
 }
 .head #links {
-    position: fixed;
-    right: 0;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -22,14 +20,14 @@
 .head #nameLogo {
     display: flex;
     justify-content: space-around;
-    padding-top: .5vh;
-    height: fit-content;
+    padding-top: 1rem;
+    height: fit-content;            
     width: clamp(8vw, 32vw, 32vw);
 }
 #nameLogo h1 {
-    color: white;
+    color: white;   
     letter-spacing: 2px;
-    font-size: clamp(1rem, 2.3vw, 2.8rem);
+    font-size:2.3vw;
 }
 a {
     text-decoration: none;
@@ -56,6 +54,7 @@ p{
 
 #Selfie{
     width: 100vw;
+    height: 100vh;
 }
 .aboutme {
     padding-top: 10vh;
@@ -63,11 +62,11 @@ p{
     display: flex;
     width: 80vw;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: space-between;
+    text-align: center;
 }
 .h3 h3 {
-    margin-left: 23%;
+    text-align: center;
     width: fit-content;
     border-bottom: 4px solid #38b2ff;
 }
@@ -210,3 +209,38 @@ body{
     height:100%;
 }
 
+
+
+@media only screen and (max-width: 811px) {
+    .lang img{
+        width:40%;
+        height: 40%;
+    }
+    .right {
+        width: 16rem;
+        height: 30rem;
+    }
+    .left {
+        width: 16rem;
+        height: 30rem;
+    }
+    .text {
+        width: 16rem;
+        heigth: 30rem;
+    }
+}
+@media only screen and (max-width: 801px) {
+    .rlist {
+        width: 20rem;
+    }
+    .lList{
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .resume {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
