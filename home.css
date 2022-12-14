@@ -63,18 +63,13 @@ p{
     width: 80vw;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
-}
-.h3 h3 {
-    text-align: center;
-    width: fit-content;
-    border-bottom: 4px solid #38b2ff;
 }
 .right{
     width: 35%;
 }
 .left{
     width:40%;
+    
 }
 .aboutme .text{
     font-size: 3rem;
@@ -85,6 +80,10 @@ p{
 }
 .text{
     width: 30vw;
+    text-align: center;
+}
+.text h3 {
+    border-bottom: 4px solid #38b2ff;
 }
 .Skills {
     display: flex;
@@ -145,7 +144,7 @@ p{
     position: absolute;
     width: 16px;
     height: 16px;
-    margin-left: -1.9%;
+    margin-left: calc(clamp(.2rem, 1.8rem, 2rem)*-1);
     border-radius: 50px;
     background: black;
     border: 2px solid black;
@@ -230,11 +229,27 @@ body{
     }
 }
 @media only screen and (max-width: 801px) {
-    .rlist {
+    .resume .rlist {
         width: 20rem;
     }
-    .lList{
+    .resume .lList{
         width: 20rem;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .resume .rlist {
+            width: 85vw;
+        }
+    
+    .resume .lList {
+        width: 85vw;
+    }
+    .images {
+        width: 80vw;
+    }
+
+    .images img {
+        width: 80vw;
     }
 }
 
@@ -242,5 +257,17 @@ body{
     .resume {
         flex-direction: column;
         justify-content: center;
+    }
+    .aboutme {
+        justify-content: center;
+    }
+    .images {
+        width: 80vw;
+    }
+    .images img{
+        width: 80vw;
+    }
+    .resume .rlist{
+        width:85vw;
     }
 }
