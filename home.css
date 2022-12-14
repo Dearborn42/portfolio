@@ -295,6 +295,9 @@ body{
 
 @media only screen and (max-width: 580px) {
     .head #nameLogo {
-        width: 10rem;
+        width: 5rem;
+    } 
+    a{
+        font-size: 1rem;
     }
 }
