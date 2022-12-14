@@ -15,19 +15,19 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-right: 2vw;
-    width: clamp(13vw, 50vw, 50vw);
+    width: clamp(5rem, 35rem, 50rem);
+    height: 11vh;
 }
 .head #nameLogo {
     display: flex;
     justify-content: space-around;
-    padding-top: 1rem;
     height: fit-content;            
-    width: clamp(8vw, 32vw, 32vw);
+    width: 20rem;
 }
 #nameLogo h1 {
     color: white;   
     letter-spacing: 2px;
-    font-size:2.3vw;
+    font-size:2.3rem;
 }
 a {
     text-decoration: none;
@@ -209,7 +209,19 @@ body{
 }
 
 
-
+@media only screen and (max-width: 920px) {
+    .head #links{
+        width: 20rem;
+    }
+    .home{
+        width: fit-content;
+        height: fit-content;
+    }
+    .work {
+        width: fit-content;
+        height: fit-content;
+    }
+}
 @media only screen and (max-width: 811px) {
     .lang img{
         width:40%;
@@ -225,7 +237,7 @@ body{
     }
     .text {
         width: 16rem;
-        heigth: 30rem;
+        height: 30rem;
     }
 }
 @media only screen and (max-width: 801px) {
@@ -236,7 +248,16 @@ body{
         width: 20rem;
     }
 }
+@media only screen and (max-width: 766px){
+    .head #nameLogo h1{
+        padding-top: 1.3rem;
+        font-size: 1.3rem;
+    }
+}
 @media only screen and (max-width: 760px) {
+    .head #nameLogo{
+           width: 15rem;
+        }
     .resume .rlist {
             width: 85vw;
         }
@@ -269,5 +290,11 @@ body{
     }
     .resume .rlist{
         width:85vw;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .head #nameLogo {
+        width: 10rem;
     }
 }
