@@ -1,0 +1,154 @@
+@media only screen and (max-width: 920px) {
+    .head #links {
+        width: 20rem;
+    }
+
+    .home {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .work {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 811px) {
+    .lang img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .right {
+        width: 16rem;
+        height: 30rem;
+    }
+
+    .left {
+        width: 16rem;
+        height: 30rem;
+    }
+
+    .text {
+        width: 16rem;
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    .resume .rlist {
+        width: 20rem;
+    }
+
+    .resume .lList {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .head #nameLogo h1 {
+        padding-top: 1.3rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .head #nameLogo {
+        width: 15rem;
+    }
+
+    .resume .rlist {
+        width: 85vw;
+    }
+
+    .resume .lList {
+        width: 85vw;
+    }
+
+    .images {
+        width: 80vw;
+    }
+
+    .images img {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .resume {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aboutme {
+        justify-content: center;
+    }
+
+    .images {
+        width: 80vw;
+    }
+
+    .images img {
+        width: 80vw;
+    }
+
+    .resume .rlist {
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .topnav {
+        display: block;
+        width: 4rem;
+    }
+
+    #links .work {
+        display: none;
+    }
+
+    #links .home {
+        display: none;
+    }
+
+    .head #links {
+        width: 6rem;
+    }
+
+    #myLinks p {
+        font-size: .8rem;
+    }
+
+    .topnav a {
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width:361px) {
+    #Selfie {
+            width: 25rem;
+        }
+        .head {
+            width: 100%;
+        }
+}
+@media only screen and (max-width:343px) {
+    .head #nameLogo {
+        width: 6rem;
+        height: 8vh;
+    }
+
+    .head #nameLogo h1 {
+        font-size: 1rem;
+        padding-top: .8rem;
+    }
+
+    .head {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .footer {
+        width: 18.5rem;
+    }
+}
