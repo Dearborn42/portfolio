@@ -35,51 +35,92 @@
 
 
 
-.head{
+.head {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
     top: 0;
-    right:0;
-    width:100%;
-    height:11vh;
-}
-.head #links{
-    position: fixed;
-    right:0;
-    height: fit-content;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-right:2vw;
-    padding-top: 1.5vh;
-    width:clamp(13vw, 50vw, 51vw);
+    left: 0;
+    width: 100vw;
+    height: 11%;
 }
 
-.head #nameLogo{
+.head #links {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-right: 2vw;
+    width: clamp(5rem, 35rem, 50rem);
+    height: 11vh;
+}
+
+.head #nameLogo {
     display: flex;
     justify-content: space-around;
-    padding-top: .5vh;
     height: fit-content;
-    width: clamp(8vw, 32vw, 40vw);
+    width: 20rem;
 }
-#nameLogo h1{
+
+#nameLogo h1 {
     color: white;
     letter-spacing: 2px;
-    font-size: clamp(1rem,  2.3vw, 2.8rem);
+    font-size: 2.3rem;
 }
+
 a {
     text-decoration: none;
     color: white;
-    height:fit-content;
+    height: fit-content;
     padding-top: .2vh;
     font-size: clamp(.4rem, 1.4vw, 2.8rem);
 }
-#links a:hover {
+
+#links .work:hover {
     color: #38b2ff;
     border-bottom: 2px solid #38b2ff;
+}
+
+#links .home:hover {
+    color: #38b2ff;
+    border-bottom: 2px solid #38b2ff;
+}
+
+p {
+    line-height: 2.25;
+    font-size: 20px;
+}
+
+
+
+
+.topnav {
+    display: none;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 

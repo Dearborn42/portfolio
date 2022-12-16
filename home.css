@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .head {
     position: fixed;
     display: flex;
@@ -8,6 +12,7 @@
     left: 0;
     width: 100vw;
     height: 11vh;
+    border-bottom:2px solid white ;
 }
 .head #links {
     height: fit-content;
@@ -57,6 +62,7 @@ p{
     overflow: hidden;
     background-color: black;
     position: relative;
+    border-bottom: 2px solid white;
 }
 
 .topnav #myLinks {
@@ -86,14 +92,23 @@ p{
 
 
 
-
-#Selfie{
+.centerIMG{
+    padding-top: 11vh;
     width: 100%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#Selfie{
+    width: 80%;
+}
+.centerAM{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .aboutme {
     padding-top: 10vh;
-    padding-left: 8vw;
     display: flex;
     width: 80vw;
     flex-wrap: wrap;
@@ -114,7 +129,7 @@ p{
     height: 20%;
 }
 .text{
-    width: 30vw;
+    width: 100%;
     text-align: center;
 }
 .text h3 {
@@ -131,26 +146,32 @@ p{
 
 
 
-
+.centerHR{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 #hr{
-    width:80%;
-    height:1px;
+    width: 80%;
     background-color: black;
     border: 2px solid black;
-    margin-right: 0vw;
-    margin-left: 8%;
 }
 
 
 
 
 
- #resumeTitle h2{
-    font-size: 48px;
-    width: fit-content;
-    margin-left: 43vw;
+ #resumeTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    
+}
+#resumeTitle h2{
+    width: fit-content;
+    font-size: 48px;
     border-bottom: 4px solid #38b2ff;
 }
 .resume {
@@ -214,6 +235,7 @@ p{
     display: block;
     background-color: black;
     text-align: center;
+    width: 100%;
 }
 .footer p{
     color: white;
@@ -227,8 +249,9 @@ p{
 
 body{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
+    margin-right: 0;
 }
 
 ::before {
@@ -238,7 +261,7 @@ body{
     display:flex;
     flex-direction: column;
     width:100%;
-    height:100%;
+    height:fit-content;
 }
 
 

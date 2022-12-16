@@ -36,15 +36,6 @@
     }
 }
 
-@media only screen and (max-width: 801px) {
-    .resume .rlist {
-        width: 20rem;
-    }
-
-    .resume .lList {
-        width: 20rem;
-    }
-}
 
 @media only screen and (max-width: 766px) {
     .head #nameLogo h1 {
@@ -72,6 +63,9 @@
 
     .images img {
         width: 80vw;
+    }
+    .footer{
+        width:100vw;
     }
 }
 
@@ -124,14 +118,12 @@
         padding: 10px 10px;
     }
 }
-@media only screen and (max-width:361px) {
-    #Selfie {
-            width: 25rem;
-        }
-        .head {
-            width: 100%;
-        }
-}
+
+/* @media only screen and (max-width:363px) {
+    body{
+        width:100vw;
+   } 
+} */
 @media only screen and (max-width:343px) {
     .head #nameLogo {
         width: 6rem;
@@ -146,9 +138,5 @@
     .head {
         justify-content: space-evenly;
         width: 100%;
-    }
-
-    .footer {
-        width: 18.5rem;
     }
 }
