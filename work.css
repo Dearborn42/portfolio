@@ -127,15 +127,6 @@ p {
 
 
 
-body {
-    height: 100vh;
-    width: 100vw;
-}
-
-
-
-
-
 
 
 
@@ -149,21 +140,31 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    top:10vh;
     justify-content: space-evenly;
-    height: 78vh;
+    width: 100%;
+    height: 60%;
+    margin-top: 8rem;
+}
+html{
+    height: 100%;
+}
+body{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .mySlides{
     display: flex;
     justify-content: center;
-    margin-top: 11vh;
-    height: 55vh;
-    width: 40vw;
+    height: 100%;
+    width: 40%;
 }
 .mySlides img{
-    height: 55vh;
-    width: 40vw;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 5/2;
     border-radius: 50px;
 }
 .text{
@@ -190,7 +191,6 @@ body {
     top: 40%;
     width: auto;
     padding: 1vw;
-    margin-top: 4vh;
     margin-right:.9vw;
     margin-left:.9vw;
     color: white;
