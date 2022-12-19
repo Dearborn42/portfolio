@@ -143,7 +143,7 @@ p {
     justify-content: space-evenly;
     width: 100%;
     height: 60%;
-    margin-top: 8rem;
+    margin-top: calc(clamp(-8rem, -6rem, -4rem)*-1);
 }
 html{
     height: 100%;
@@ -158,13 +158,12 @@ body{
 .mySlides{
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 30vw;
     width: 40%;
 }
 .mySlides img{
     height: 100%;
     width: 100%;
-    aspect-ratio: 5/2;
     border-radius: 50px;
 }
 .text{
