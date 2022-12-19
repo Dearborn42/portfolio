@@ -42,7 +42,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   captionText.innerHTML = slides[slideIndex - 1].id;
 
-  if (w >= 650) {
+  if (w >= 701 || w <= 404) {
     if (slideIndex != slides.length) {
       slides[slideIndex].style.display = "block";
       captionText.innerHTML = slides[slideIndex - 1].id + " and " + slides[slideIndex].id;

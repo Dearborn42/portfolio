@@ -68,4 +68,12 @@
     .footer {
         width: 100%;
     }
+    #myLinks p {
+        font-size: .6rem;
+    }
+   #myLinks a{
+       height: fit-content;
+       padding: 0;
+       padding-left: 10px;
+   }
 }

@@ -21,6 +21,7 @@
     padding: 2vh 0px;
     color: white;
 }
+
 .footer {
     display: block;
     position: fixed;
@@ -142,36 +143,43 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    height: 60%;
-    margin-top: calc(clamp(-8rem, -6rem, -4rem)*-1);
-}
-html{
-    height: 100%;
-}
-body{
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: 100%;
-}
+    height: 30vw;
+    margin-bottom: 4vh;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 
-.mySlides{
+.mySlides {
     display: flex;
     justify-content: center;
     height: 30vw;
     width: 40%;
 }
-.mySlides img{
+
+.mySlides img {
     height: 100%;
     width: 100%;
     border-radius: 50px;
 }
-.text{
+
+.text {
     position: absolute;
     font-size: larger;
     color: black;
     width: 40vw;
-    height:55vh;
+    height: 55vh;
     text-align: center;
     top: 50%;
     transform: translateY(-30%);
@@ -190,8 +198,8 @@ body{
     top: 40%;
     width: auto;
     padding: 1vw;
-    margin-right:.9vw;
-    margin-left:.9vw;
+    margin-right: .9vw;
+    margin-left: .9vw;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -206,7 +214,8 @@ body{
     border-radius: 12px;
     background-color: #000000;
 }
-.prev{
+
+.prev {
     background-color: #000000;
     border-radius: 12px;
     left: 0;
@@ -217,17 +226,29 @@ body{
 .next:hover {
     background-color: grey;
 }
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 701px) {
     .mySlides {
         width: 80vw;
-        }
-    .mySlides img {
-        height: 55vh;
-        width: 80vw;
-        border-radius: 50px;
+        height: 70vw;
     }
-    .prev,
-    .next{
-        margin-top: 4vh;
+    .container{
+        height:70vw;
+    }
+}
+
+@media only screen and (max-width: 404px) {
+    .container {
+        height: 140vw;
+        justify-content: space-around;
+    }
+
+    .mySlides {
+        width: 80vw;
+        height: 70vw;
+    }
+
+    body {
+        justify-content: space-around;
     }
 }
