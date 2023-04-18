@@ -12,35 +12,22 @@
     <title>Workpage</title>
 </head>
 <body>
-    <header class="head">
-        <div id="nameLogo">
-            <h1>Andrew Murphy</h1>
-        </div>
-        <div id="links">
-            <a class="home" href="index.html">
-                <p>Home page</p>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./favicon-32x32.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                Bootstrap
             </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="work" href="work.html">
-                <p>Work page</p>
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="topnav">
-                <a class="active"></a>
-                <div id="myLinks">
-                    <a href="work.html">
-                        <p>Work page</p>
-                    </a>
-                    <a href="index.html">
-                        <p>Home page</p>
-                    </a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work page</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <div id="carouselExample" class="carousel slide container-m">
         <div class="carousel-inner">

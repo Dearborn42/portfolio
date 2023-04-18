@@ -56,33 +56,13 @@ p{
 
 
 
-
-.topnav {
-    display: none;
-    overflow: hidden;
+.navbar{
     background-color: black;
-    position: relative;
-    border-bottom: 2px solid white;
+    padding-top: 0;
+    padding-bottom: 0;
 }
-
-.topnav #myLinks {
-    display: none;
-}
-
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.topnav a.icon {
-    background: white;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+.container-fluid {
+    background-color: black;
 }
 
 
@@ -257,11 +237,9 @@ body{
 ::before {
     box-sizing: border-box;
 }
-.container{
+.container-custom{
     display:flex;
     flex-direction: column;
     width:100%;
     height:fit-content;
 }
-
-
