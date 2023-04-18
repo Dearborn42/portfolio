@@ -135,120 +135,25 @@ p {
 * {
     box-sizing: border-box;
 }
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 30vw;
-    margin-bottom: 4vh;
-    }
-    
-    html {
-        height: 100%;
-    }
-    
-    body {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-
-.mySlides {
-    display: flex;
-    justify-content: center;
-    height: 30vw;
-    width: 40%;
-}
-
-.mySlides img {
+   
+html {
     height: 100%;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
-    border-radius: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.text {
-    position: absolute;
-    font-size: larger;
-    color: black;
-    width: 40vw;
-    height: 55vh;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-30%);
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 1vw;
-    margin-right: .9vw;
-    margin-left: .9vw;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 12px;
-    background-color: #000000;
-}
-
-.prev {
-    background-color: #000000;
-    border-radius: 12px;
-    left: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: grey;
-}
-
-@media only screen and (max-width: 701px) {
-    .mySlides {
-        width: 80vw;
-        height: 70vw;
-    }
-    .container{
-        height:70vw;
-    }
-}
-
-@media only screen and (max-width: 404px) {
-    .container {
-        height: 140vw;
-        justify-content: space-around;
-    }
-
-    .mySlides {
-        width: 80vw;
-        height: 70vw;
-    }
-
-    body {
-        justify-content: space-around;
-    }
+.custom{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
 }
