@@ -56,22 +56,22 @@ p{
 
 
 
-
-
-
-
-
-
-.centerIMG{
-    padding-top: 11vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.navbar{
+    background-color: black;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.container-fluid {
     background-color: black;
 }
-#Selfie{
-    width: 80%;
-}
+
+
+
+
+
+
+
+
 .centerAM{
     width: 100%;
     display: flex;
